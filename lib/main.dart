@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:funtoread/screens/main_dashboard.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: theme,
-      home: ,
+      home: MainDashboard(),
     );
   }
 }
