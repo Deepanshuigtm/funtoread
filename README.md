@@ -3,6 +3,18 @@
 ## Objective
 Develop an intuitive mobile application using the provided JSON data and interface on Flutter. Focus on creating a user-friendly interface and ensuring a smooth user experience.
 
+## External Libraies used are :
+
+google fonts :  https://pub.dev/packages/google_fonts
+
+Provider :  https://pub.dev/packages/riverpod/install
+
+Rattings of apps : https://pub.dev/packages/flutter_rating_bar
+
+
+JSON Data : Provided
+
+
 ## Application Overview
 The goal is to implement the provided interface screenshot, incorporating the necessary elements, and populating relevant data from the provided JSON dataset.
 
