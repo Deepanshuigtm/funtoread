@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:funtoread/providers/trending_offers.dart';
 
+import '../providers/data.dart';
 import 'offer_item.dart';
 
 class TrendingOffers extends ConsumerWidget {
@@ -10,6 +11,7 @@ class TrendingOffers extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final offers = ref.watch(trendingOffersProvider);
+    final Data = ref.watch(DataProvider);
 
     return Column(
       children: [
@@ -28,9 +30,9 @@ class TrendingOffers extends ConsumerWidget {
           height: 250, // Adjust the height as needed
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
-            itemCount: offers.length,
+            itemCount: Data.length,
             itemBuilder: (context, index) {
-              return OfferItem(offer: offers[index]);
+              return OfferItem(offer: Data[index]);
             },
           ),
         ),

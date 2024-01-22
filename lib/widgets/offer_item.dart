@@ -16,7 +16,7 @@ class OfferItem extends StatelessWidget {
           ClipRRect(
             borderRadius: BorderRadius.circular(15),
             child: Image.network(
-              offer['imageUrl'],
+              offer['thumbnail'],
               height: 200,
               width: 200,
               fit: BoxFit.cover,
@@ -41,12 +41,12 @@ class OfferItem extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      offer['name'],
+                      offer['brand']['title'],
                       style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: Colors.white),
                     ),
                     SizedBox(height: 4),
                     Text(
-                      'Get Rs. ${offer['cost']}',
+                      'Get Rs. ${offer['payout_amt']}',
                       style: TextStyle(fontSize: 14, color: Colors.white),
                     ),
                     SizedBox(height: 3,),
@@ -54,7 +54,7 @@ class OfferItem extends StatelessWidget {
                       children: [
                         Icon(Icons.arrow_downward, color: Colors.orange),
                         SizedBox(width: 5.0),
-                        Text('${offer['users']} Users',style: TextStyle(fontSize: 10, color: Colors.white))
+                        Text('${offer['total_lead']} Users',style: TextStyle(fontSize: 10, color: Colors.white))
                       ],
                     )
                   ],
