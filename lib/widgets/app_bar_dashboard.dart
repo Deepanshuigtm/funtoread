@@ -52,7 +52,7 @@ class AppBarDashboard extends StatelessWidget {
                 Icon(Icons.wallet_rounded, color: Colors.lightBlue),
                 SizedBox(width: 5.0),
                 Text(
-                  '\₹$currentBalance',
+                  '₹$currentBalance',
                   style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),
                 ),
               ],

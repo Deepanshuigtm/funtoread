@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:funtoread/widgets/app_bar_dashboard.dart';
 import 'package:funtoread/widgets/nav_bar.dart';
+import 'package:funtoread/widgets/trending_offers.dart';
 
 class MainDashboard extends StatelessWidget{
   MainDashboard( {super.key} );
@@ -17,7 +18,16 @@ class MainDashboard extends StatelessWidget{
           preferredSize: Size.fromHeight(70),
           child: AppBarDashboard(username: username, currentBalance: currentBalance,),
         ),
-        body: NavBar(),
+        body: Column(
+          children: [
+            NavBar(),
+            SizedBox(height: 20,),
+            Padding(
+                padding: EdgeInsets.only(left: 12),
+              child: TrendingOffers(),
+            ),
+          ],
+        )
       ),
     );
   }
