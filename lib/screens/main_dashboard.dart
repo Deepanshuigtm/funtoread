@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:funtoread/widgets/app_bar_dashboard.dart';
+import 'package:funtoread/widgets/nav_bar.dart';
 
 class MainDashboard extends StatelessWidget{
   MainDashboard( {super.key} );
@@ -11,13 +12,12 @@ class MainDashboard extends StatelessWidget{
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        backgroundColor: Colors.blue.shade50,
         appBar: PreferredSize(
           preferredSize: Size.fromHeight(70),
           child: AppBarDashboard(username: username, currentBalance: currentBalance,),
         ),
-        body: Container(
-          // Your main content goes here
-        ),
+        body: NavBar(),
       ),
     );
   }
