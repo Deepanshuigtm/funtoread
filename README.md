@@ -18,14 +18,19 @@ The goal is to implement the provided interface screenshot, incorporating the ne
 ## Requirements
 
 Data Integration: Utilize the provided JSON data to populate relevant information in the application.
+
 State Management: Implement appropriate state management techniques for the assignment. Options include Riverpod Provider.
+
 Responsiveness: Ensure the app is responsive and visually appealing across different screen sizes.
+
 Code Organization: Adhere to best practices for code organization and maintainability.
 
 ## Getting Started
 
 Clone the repository: git clone https://github.com/Deepanshuigtm/funtoread.git
+
 Install dependencies: flutter pub get
+
 Run the application: flutter run
 
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
